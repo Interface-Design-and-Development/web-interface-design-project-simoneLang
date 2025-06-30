@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crunchy Cravings - Discover Your Favorite Chips</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    /* Body with animated tie-dye background */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: repeating-radial-gradient(
+        circle at center,
+        #ff6b35,
+        #ff6b35 30px,
+        #fff242 30px,
+        #74f741ce 60px,
+        #ffd9b3 60px,
+        #ffdcb3 90px,
+        #ff6b35 90px,
+        #ff6b35 120px
+      );
+      animation: tieDyeShift 20s linear infinite;
+      background-size: 200% 200%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Animate the background gradient for shifting effect */
+    @keyframes tieDyeShift {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    /* Semi-transparent hero overlay for text readability */
+    .hero {
+      background: rgba(252, 183, 33, 0.747); /* semi-transparent orange */
+      padding: 140px 20px;
+      color: rgb(75, 236, 61);
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px);
+      /* Remove previous background image to show tie-dye */
+      /* If you want to keep an image, remove this and adjust accordingly */
+    }
+
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+    }
+
+    .btn-primary {
+      background-color: #ffda35;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #ff8c42;
+    }
+
+     .card {
+      height: 100%; /* Full height */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      height: auto; /* Maintain image aspect ratio */
+      width: 100%;
+    }
+
+    .card-body {
+      flex-grow: 1; /* Expand body to fill card */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-title {
+      margin-top: auto; /* Push title to bottom if needed */
+    }
+
+    footer {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Crunchy Cravings</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#flavors">Flavors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero text-center">
+    <h1>Discover Your Next Crunch</h1>
+    <p>Explore bold and unique chip flavors that keep you coming back for more.</p>
+    <a href="#flavors" class="btn btn-primary">Explore Flavors</a>
+  </header>
+
+  <section id="flavors" class="container py-5">
+    <h2 class="text-center mb-4">Our Flavors</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="images/Spicy Jalapeno.png" class="card-img-top" alt="Spicy Jalapeño">
+          <div class="card-body">
+            <h5 class="card-title">Spicy Jalapeño</h5>
+            <p class="card-text">Bold and fiery with a tangy kick! For those who like to live on the edge and break a sweat while snacking. Now 20% off!!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="images/Sea Salt Classic.png" class="card-img-top" alt="Sea Salt Classic">
+          <div class="card-body">
+            <h5 class="card-title">Sea Salt Classic</h5>
+            <p class="card-text">Perfectly crispy and lightly salted! Simple, timeless, and the ideal companion for any dip or solo crunching.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+         <img src="images/Sour Cream & Onion.png" class="card-img-top" alt="Sour Cream & Onion">
+          <div class="card-body">
+            <h5 class="card-title">Sour Cream & Onion</h5>
+            <p class="card-text">Creamy, tangy, and totally addictive. Like a cozy blanket for your taste buds! You won't stop at just one handful.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="images/Barbecue Bliss.png" class="card-img-top" alt="Barbecue Bliss">
+          <div class="card-body">
+            <h5 class="card-title">Barbecue Bliss</h5>
+            <p class="card-text">Smoky, sweet, and a little sassy! Like your favorite backyard cookout but in chip form. Now 50% off!!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="images/Cheddar Explosion.png" class="card-img-top" alt="Cheddar Explosion">
+          <div class="card-body">
+            <h5 class="card-title">Cheddar Explosion</h5>
+            <p class="card-text">Big cheese flavor with every crunch! For when you want your snack to shout &quot;cheddar is better!&quot;</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="images/Salt & Vinegar Vibes.png" class="card-img-top" alt="Salt & Vinegar Vibes">
+          <div class="card-body">
+            <h5 class="card-title">Salt & Vinegar Vibes</h5>
+            <p class="card-text">Punchy and puckering in the best way possible! A tangy flavor adventure that wakes up your senses with every bite.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">
+        Hi! I'm Simone, founder of Crunchy Cravings. Our story began in my small college apartment in 2022, where late-night snacking experiments turned into wild flavor creations.
+        After countless spicy, salty, and cheesy tests (and a few kitchen disasters), I knew chips could be more than a side snack; they could be the highlight of every gathering and the hero of every late-night craving.
+        <br /><br />
+        Today, Crunchy Cravings crafts each batch with bold personality and big heart. We believe snacking should be an adventure, and every chip should bring a smile (and maybe a little happy dance). Thank you for crunching along with us; we can’t wait for you to find your new favorite flavor!
+      </p>
+    </div>
+  </section>
+
+  <footer class="text-center p-4">
+    &copy; 2022 Crunchy Cravings. All rights reserved.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
